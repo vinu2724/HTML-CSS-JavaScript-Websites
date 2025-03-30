@@ -3,7 +3,7 @@ console.log("script is working");
 document.addEventListener("DOMContentLoaded", () => {
   const populate = async (value, currency) => {
     let myStr = "";
-    let options = "";
+    let options = `<option value="" selected disabled>Select a currency</option>`;;
     let search = document.querySelector("select[name='Search']").value
 
     
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const output = document.querySelector(".output");
-    output.style.display = "block"; // Change text color
+    output.style.display = "block"; 
 
-    const Search = document.querySelector(".Search");
-    Search.style.display = "block"; // Change text color
-    search= null
+    const SearchCurrency = document.querySelector("#SearchCurrency");
+    SearchCurrency.style.display = "block"; 
+    
     
   };
     
@@ -67,8 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const value = parseInt(document.querySelector("input[name='quantity']").value);
       console.log( "value",value)
       const currency = document.querySelector("select[name='Currency']").value;
+      const search = document.querySelector("select[name='Search']").value
+      
 
-     value ? populate(value, currency): alert("Enter Quantity")
+     search ? value ? populate(value, currency): alert("Enter Quantity") : alert("Select Search Value")
     
   })
 

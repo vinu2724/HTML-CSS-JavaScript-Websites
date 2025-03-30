@@ -106,8 +106,8 @@ height: 70vh;
 min-width: 50vw;
 
 }
-.Search{
-  /* display: none; */
+#SearchCurrency{
+  display: none;
 }
 .output table caption{
   text-align: left;
