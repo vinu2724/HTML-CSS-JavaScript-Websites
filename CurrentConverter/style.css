@@ -31,7 +31,7 @@ nav li a{
 }
 nav li a:hover{
   text-decoration: none;
-  color: red;
+
 }
  nav ul li{
   list-style: none;
@@ -43,8 +43,76 @@ nav li a:hover{
 .container{
   min-height: 100vh;
   font-family: 'poppins' , sans-serif;
+
+  width: 80vw;
+  margin: auto  ;
+  display: flex;
+  justify-content: space-between;
+}
+.container h2{
+  
+}
+.container form label{
+  font-size: 20px;
+
+}
+.container form input[type='number'], select{
+  width: 23vw;
+   font-size: 25px;
+   margin:23px 0;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
 }
 
+.container .btn ,#Search{
+  width: 144px;
+  padding: 5px 8px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color:rgb(227, 175, 233);
+  color: rgb(12, 11, 11);
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+
+}
+
+button{
+  width: 144px;
+  padding: 5px 8px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color:rgb(227, 175, 233);
+  color: rgb(12, 11, 11);
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.output table{
+  width: 50vw;
+  text-align: center;
+  border: 2px solid black;
+}
+.output  {
+  
+display: none;
+overflow-y: auto;
+height: 70vh;
+min-width: 50vw;
+
+}
+.Search{
+  /* display: none; */
+}
+.output table caption{
+  text-align: left;
+  font-weight: bold;
+}
 footer{
   text-align: center;
 }

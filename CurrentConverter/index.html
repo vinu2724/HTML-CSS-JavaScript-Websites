@@ -19,8 +19,47 @@
      
   </nav>
   <div class="container">
-</a>
+    <div>
 
+      <h2>Choose a Currency to Convert</h2>
+      <form action="/action.php" method="get">
+        
+        <label for="Quantity">Choose a Quantity : </label>
+        <input type="number" name="quantity" min="1" max="10" required> 
+        <label for="Currency">Choose a Currency : </label>
+        
+        <select name="Currency">
+          <option value="INR">Indian</option>
+          <option value="USD">United State</option>
+          <option value="EUR">Euro</option>
+          
+        </select>
+        <button id="Submit" class="btn" type="submit" value="submit">Submit</button>
+        
+        
+        <label for="Serach" class="Search">Search for Currency: </label>
+        <select class="Search" name="Search">
+          
+        </select>
+        <button class="Search" name="Search" id="Search">Search</button>
+        
+      </form>
+    </div>
+   <div class="output">
+    <table>
+      <caption>Here is your values converted into different Currencies</caption>
+      <thead>
+        <tr>
+          <td>Currency</td>
+          <td>Code</td>
+          <td>Value</td>
+
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+   </div>
   </div>
   <footer>
    Copyright &copy; All copyRight reserved
